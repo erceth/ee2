@@ -1,0 +1,1 @@
+JSFlags is an artificial intelligence tank game.

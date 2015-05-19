@@ -1,0 +1,1 @@
+JSFlags is a robot AI tank game. The tanks' movement, game engine, collision detection, controls and AI logic are all written in Node.js and Javascript. The view portion uses HTML canvas manipulated using Javascript.  <br><br> Click here to view this project.

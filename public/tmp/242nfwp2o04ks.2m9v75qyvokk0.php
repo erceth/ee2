@@ -11,8 +11,8 @@
 		            	<img class="project-img" src="../img/webcrawler_screenshot.png">
 		            	<div class="blurb">
 		            		<div class="title"><h3>Web Crawler</h3></div>
-		            		<p class="short-description"><include href="{{ @webcrawler_short_description }}" /><p>
-		                    <p class="medium-description"><include href="{{ @webcrawler_medium_description }}" /></p>
+		            		<p class="short-description"><?php echo $this->render($webcrawler_short_description,$this->mime,get_defined_vars()); ?><p>
+		                    <p class="medium-description"><?php echo $this->render($webcrawler_medium_description,$this->mime,get_defined_vars()); ?></p>
 		                </div>
 		            </div>
 		        </a>
@@ -25,8 +25,8 @@
 		            	<img class="project-img" src="../img/tanks2.png">
 		            	<div class="blurb">
 		            		<div class="title"><h3>JSFlags</h3></div>
-		                    <p class="short-description"><include href="{{ @jsflags_short_description }}" /></p>
-		                    <p class="medium-description"><include href="{{ @jsflags_medium_description }}" /></p>
+		                    <p class="short-description"><?php echo $this->render($jsflags_short_description,$this->mime,get_defined_vars()); ?></p>
+		                    <p class="medium-description"><?php echo $this->render($jsflags_medium_description,$this->mime,get_defined_vars()); ?></p>
 		                </div>
 		            </div>
 		        </a>
@@ -39,8 +39,8 @@
 		            	<img class="project-img" src="../img/google-sheets.png">
 		            	<div class="blurb">
 		            		<div class="title"><h3>SMS Attendance</h3></div>
-		            		<p class="short-description"><include href="{{ @sms_tracker_short_description }}" /></p>
-		                    <p class="medium-description"><include href="{{ @sms_tracker_medium_description }}" /></p>
+		            		<p class="short-description"><?php echo $this->render($sms_tracker_short_description,$this->mime,get_defined_vars()); ?></p>
+		                    <p class="medium-description"><?php echo $this->render($sms_tracker_medium_description,$this->mime,get_defined_vars()); ?></p>
 		                </div>
 
 		                

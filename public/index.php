@@ -36,6 +36,10 @@
 	    	global $template;
 	    	$f3->set("webcrawler_short_description", snippets_path . "/webcrawler_short_description.html");
 	    	$f3->set("webcrawler_medium_description", snippets_path . "/webcrawler_medium_description.html");
+	    	$f3->set("jsflags_short_description", snippets_path . "/jsflags_short_description.html");
+	    	$f3->set("jsflags_medium_description", snippets_path . "/jsflags_medium_description.html");
+	    	$f3->set("sms_tracker_short_description", snippets_path . "/sms_tracker_short_description.html");
+	    	$f3->set("sms_tracker_medium_description", snippets_path . "/sms_tracker_medium_description.html");
 	        echo $template->render(template_path ."/projects.html");
 	    }
 	);
@@ -43,6 +47,13 @@
 	    function() {
 	        $view=new View;
 	        echo $view->render(template_path ."/contact.html");
+	    }
+	);
+
+	$f3->route('GET /sms-tracker',
+	    function() {
+	        $view=new View;
+	        echo $view->render(template_path ."/smsTracker.html");
 	    }
 	);
 

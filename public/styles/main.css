@@ -126,6 +126,14 @@
   transition: visibility 0s 1s, opacity 1s linear;
   -webkit-transition: visibility 0s 1s, opacity 1s linear;
 }
+.sms-tracker .item {
+  height: 500px;
+}
+@media (max-width: 768px) {
+  .sms-tracker .item {
+    height: 300px;
+  }
+}
 /** WRAPPER ***/
 .wrapper {
   min-height: 100%;
