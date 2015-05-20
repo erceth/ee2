@@ -1,0 +1,2 @@
+<p>Counts all the words on a web page and displays them in a table from most common to least common. Like a very simple Google. </p>
+<p>This app uses the node modules <a href="https://github.com/request/request" target="_blank">Request</a> and <a href="https://www.npmjs.com/package/cheerio" target="_blank">Cheerio</a> to request the contents of an external site and capture the contents.</p>

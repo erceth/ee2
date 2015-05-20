@@ -1,1 +1,1 @@
-SMS messaging tracks classroom attendance and displays it using Google spreadsheet.  I used this system to keep attendance in a class for about four months.  I shared the doc with whoever needed to know the attendence.  <br><br> Click here to view this project.
+SMS Tracker tracks classroom attendance and displays it using Google spreadsheet.  I used this system to keep attendance in a class for about four months.  I shared the doc with whoever needed to know the attendence.  <br><br> Click here to view this project.

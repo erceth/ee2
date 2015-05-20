@@ -1,0 +1,1 @@
+The Provo Freedom Festival is a series of events spanning serveral months celebrating Independance day.  The grand finale event is the Stadium of Fire which features popular musicial artists and spectacular firework show.  <br><br> Click here to view this project.

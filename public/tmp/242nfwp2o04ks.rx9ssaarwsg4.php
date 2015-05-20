@@ -10,7 +10,7 @@
         			<p>Node.js, Javascript, Express, Socket.io, HTML5 canvas</p>
         		</div>
         		<h4>Description</h4>
-	            <p class="long-description"><include href="{{ @jsflags_long_description }}" /></p>
+	            <p class="long-description"><?php echo $this->render($jsflags_long_description,$this->mime,get_defined_vars()); ?></p>
 	            <h3>Github repos:</h3>
         		<p><a target="_blank" href="https://github.com/erceth/jsflags">JSFlags</a></p>
             	<p><a target="_blank" href="https://github.com/erceth/jsflags-ai">JSFlags-ai</a></p>

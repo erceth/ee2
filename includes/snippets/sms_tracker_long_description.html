@@ -1,0 +1,5 @@
+<p>SMS messaging tracks classroom attendance and displays it using Google spreadsheet.  I used this system to keep attendance in a class for about four months.  I shared the doc with whoever needed to know the attendence.</p>
+                <h4>How it works</h4>
+                <p>text: "register FirstName LastName" to: provided Twilio number and wait for confirmation text.</p>
+                <p>text: "here" to same number and wait for confirmation text.</p>
+                <p>Attendees texts are sent to a Twillio number.  Twillio sends notification to a Node server.  Node server pulls latest texts from Twillo and updates the Mongo database.  When the Google Spreadsheet is open it pulls the data from the Mongo database, clears all the cells and replaces them with the most up-to-date data.</p>

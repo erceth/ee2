@@ -9,6 +9,22 @@
 	echo $template->render(template_path . "/header.html");
 
 
+	$f3->set("web_crawler_short_description", snippets_path . "/web_crawler_short_description.html");
+	$f3->set("web_crawler_medium_description", snippets_path . "/web_crawler_medium_description.html");
+	$f3->set("web_crawler_long_description", snippets_path . "/web_crawler_long_description.html");
+	$f3->set("jsflags_short_description", snippets_path . "/jsflags_short_description.html");
+	$f3->set("jsflags_medium_description", snippets_path . "/jsflags_medium_description.html");
+	$f3->set("jsflags_long_description", snippets_path . "/jsflags_long_description.html");
+	$f3->set("sms_tracker_short_description", snippets_path . "/sms_tracker_short_description.html");
+	$f3->set("sms_tracker_medium_description", snippets_path . "/sms_tracker_medium_description.html");
+	$f3->set("sms_tracker_long_description", snippets_path . "/sms_tracker_long_description.html");
+
+	$f3->set("freedom_festival_short_description", snippets_path . "/freedom_festival_short_description.html");
+	$f3->set("freedom_festival_medium_description", snippets_path . "/freedom_festival_medium_description.html");
+	$f3->set("freedom_festival_long_description", snippets_path . "/freedom_festival_long_description.html");
+	
+
+
 	$f3->route('GET /',
 	    function($f3) {
 	    	global $template;
@@ -34,12 +50,7 @@
 	$f3->route('GET /projects',
 	    function($f3) {
 	    	global $template;
-	    	$f3->set("webcrawler_short_description", snippets_path . "/webcrawler_short_description.html");
-	    	$f3->set("webcrawler_medium_description", snippets_path . "/webcrawler_medium_description.html");
-	    	$f3->set("jsflags_short_description", snippets_path . "/jsflags_short_description.html");
-	    	$f3->set("jsflags_medium_description", snippets_path . "/jsflags_medium_description.html");
-	    	$f3->set("sms_tracker_short_description", snippets_path . "/sms_tracker_short_description.html");
-	    	$f3->set("sms_tracker_medium_description", snippets_path . "/sms_tracker_medium_description.html");
+
 	        echo $template->render(template_path ."/projects.html");
 	    }
 	);
@@ -52,8 +63,29 @@
 
 	$f3->route('GET /sms-tracker',
 	    function() {
-	        $view=new View;
-	        echo $view->render(template_path ."/smsTracker.html");
+	    	global $template;
+	    	echo $template->render(template_path ."/sms_tracker.html");
+	    }
+	);
+
+	$f3->route('GET /web-crawler',
+	    function() {
+	        global $template;
+	        echo $template->render(template_path ."/web_crawler.html");
+	    }
+	);
+
+	$f3->route('GET /jsflags',
+	    function() {
+	        global $template;
+	        echo $template->render(template_path ."/jsflags.html");
+	    }
+	);
+
+	$f3->route('GET /freedom-festival',
+	    function() {
+	        global $template;
+	        echo $template->render(template_path ."/freedom-festival.html");
 	    }
 	);
 
