@@ -5,6 +5,8 @@
 @import "projects.less";
 @import "sms-tracker.less";
 @import "freedom-festival.less";
+@import "contact.less";
+@import "web-crawler.less";
 
 /** WRAPPER ***/
 .wrapper {
@@ -115,6 +117,15 @@ footer {
 	bottom: 0;
 	height: 60px;
 	color: #fff;
+	.social-logo {
+		img {
+			height: 35px;
+			width: 35px;	
+		}
+		margin-left: 15px;
+		float: right;
+	}
+
 	&.footer {
 		position: absolute;
 		bottom: 0;
@@ -127,6 +138,13 @@ footer {
 	margin-right: 60px;
 	overflow: hidden;
 	height: 100%;
+	top: 15px;
+	.text {
+		top: 20px;
+	}
+	.social-media {
+		top: 14px;
+	}
 	@media (max-width: 767px) {
 		margin-left: 0;
 		margin-right: 0;

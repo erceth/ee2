@@ -22,6 +22,8 @@
 	$f3->set("freedom_festival_short_description", snippets_path . "/freedom_festival_short_description.html");
 	$f3->set("freedom_festival_medium_description", snippets_path . "/freedom_festival_medium_description.html");
 	$f3->set("freedom_festival_long_description", snippets_path . "/freedom_festival_long_description.html");
+
+	$f3->set("social_media_links", snippets_path . "/social_media_links.html");
 	
 
 
@@ -54,10 +56,27 @@
 	        echo $template->render(template_path ."/projects.html");
 	    }
 	);
+
 	$f3->route('GET /contact',
-	    function() {
+	    function($f3) {
+	    	global $template;
+	    	echo $template->render(template_path ."/contact.html");
+	    }
+	);
+
+	$f3->route('POST /contact',
+	    function($f3) {
+	    	
+	    	$post = $f3->get('POST');
+
+	    	if (isset($post["message"])) {
+	    		$message = urlencode($post["message"]);
+	    		$logger = new Log('../messages/messages.log');
+	    		$logger->write($message);
+	    	}
+
 	        $view=new View;
-	        echo $view->render(template_path ."/contact.html");
+	        echo $view->render(template_path ."/contact_submit.html");
 	    }
 	);
 
@@ -89,10 +108,14 @@
 	    }
 	);
 
+	
+
 
 	$f3->run();
 
-	include template_path . "/footer.html";
+
+
+ 	include template_path . "/footer.html";
 ?>
 
 
