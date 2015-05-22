@@ -37,19 +37,68 @@ header {
 		margin-left: 0;
 		margin-right: 0;
 	}
+
+	.logo {
+		position: absolute;
+
+		height: 60px;
+		cursor: pointer;
+		img {
+			height: 58px;
+			width: 58px;
+		}
+
+		.flame {
+			-ms-transform: rotate(164deg); /* IE 9 */
+		    -webkit-transform: rotate(164deg); /* Chrome, Safari, Opera */
+		    transform: rotate(164deg);
+		    position: absolute;
+			z-index: 99;
+			width: 15px;
+			height: 15px;
+		}
+		.flame1 {
+		    top: 46px;
+  			right: 49px;
+		}
+		.flame2 {
+			top: 53px;
+  			right: 48px;
+		}
+		.flame3 {
+			top: 47px;
+  			right: 25px;
+		}
+		.flame4 {
+			top: 55px;
+  			right: 31px;
+		}
+		.flame5 {
+			top: 44px;
+  			right: 39px;
+		}
+
+	}
+
+	.name {
+		left: 65px;
+		position: absolute;
+		color: #fff;
+		font-size: 21px;
+		display: inline-block;
+	}
 }
 
-.site-title h1 {
-	margin-top: 10px;
-	color: #fff;
+.site-title {
+	h1 {
+		margin-top: 10px;
+		color: #fff;
+	}
+	
 	
 }
 
-.logo {
-	height: 60px;
-	cursor: pointer;
 
-}
 
 .hamburger {
 	position: absolute;
@@ -87,6 +136,11 @@ header {
 		&:hover {
 			background: rgba(0,0,0,.5);
 		}
+		@media(max-width: @screen-sm) {
+
+			font-size: 20px;
+			padding: 10px; 
+		}
 	}
 }
 
@@ -102,6 +156,9 @@ header {
 	}
 	.nav-item {
 		width: 100%;
+	}
+	@media(max-width: @screen-md) {
+		top: 59px;
 	}
 
 }

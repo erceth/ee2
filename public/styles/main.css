@@ -205,13 +205,56 @@ header {
     margin-right: 0;
   }
 }
+.header-container .logo {
+  position: absolute;
+  height: 60px;
+  cursor: pointer;
+}
+.header-container .logo img {
+  height: 58px;
+  width: 58px;
+}
+.header-container .logo .flame {
+  -ms-transform: rotate(164deg);
+  /* IE 9 */
+  -webkit-transform: rotate(164deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(164deg);
+  position: absolute;
+  z-index: 99;
+  width: 15px;
+  height: 15px;
+}
+.header-container .logo .flame1 {
+  top: 46px;
+  right: 49px;
+}
+.header-container .logo .flame2 {
+  top: 53px;
+  right: 48px;
+}
+.header-container .logo .flame3 {
+  top: 47px;
+  right: 25px;
+}
+.header-container .logo .flame4 {
+  top: 55px;
+  right: 31px;
+}
+.header-container .logo .flame5 {
+  top: 44px;
+  right: 39px;
+}
+.header-container .name {
+  left: 65px;
+  position: absolute;
+  color: #fff;
+  font-size: 21px;
+  display: inline-block;
+}
 .site-title h1 {
   margin-top: 10px;
   color: #fff;
-}
-.logo {
-  height: 60px;
-  cursor: pointer;
 }
 .hamburger {
   position: absolute;
@@ -250,6 +293,12 @@ header {
 .nav-list .nav-item:hover {
   background: rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 768px) {
+  .nav-list .nav-item {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
 .navigation {
   top: 30px;
 }
@@ -263,6 +312,11 @@ header {
 }
 .mobile-navigation .nav-item {
   width: 100%;
+}
+@media (max-width: 992px) {
+  .mobile-navigation {
+    top: 59px;
+  }
 }
 /*** MID ***/
 .mid {
