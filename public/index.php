@@ -23,6 +23,10 @@
 	$f3->set("freedom_festival_medium_description", snippets_path . "/freedom_festival_medium_description.html");
 	$f3->set("freedom_festival_long_description", snippets_path . "/freedom_festival_long_description.html");
 
+	$f3->set("filer_short_description", snippets_path . "/filer_short_description.html");
+	$f3->set("filer_medium_description", snippets_path . "/filer_medium_description.html");
+	$f3->set("filer_long_description", snippets_path . "/filer_long_description.html");
+
 	$f3->set("social_media_links", snippets_path . "/social_media_links.html");
 	
 
@@ -105,6 +109,13 @@
 	    function() {
 	        global $template;
 	        echo $template->render(template_path ."/freedom-festival.html");
+	    }
+	);
+
+	$f3->route('GET /filer',
+	    function() {
+	        global $template;
+	        echo $template->render(template_path ."/filer.html");
 	    }
 	);
 
