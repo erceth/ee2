@@ -372,9 +372,6 @@ footer.footer {
 .no-margin {
   margin: 0 !important;
 }
-#kc {
-  float: right;
-}
 /*fix bootstrap*/
 .col-xs-1,
 .col-sm-1,
