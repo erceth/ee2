@@ -24,6 +24,8 @@ $(document).ready(function() {
     		left: "63px"
     	}, 1000);
     });
+
+    console.log('%c Isn\'t this a pleasant surprise.', 'background: #F55641; color: #fff; font: 20px/50px arial; padding: 10px 20px');console.log('%c ', 'font-size: 100px; padding: 10px 150px; background: url(http://cdn.nyanit.com/nyan2.gif) no-repeat');
     
 });
 

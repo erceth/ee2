@@ -27,6 +27,10 @@
 	$f3->set("filer_medium_description", snippets_path . "/filer_medium_description.html");
 	$f3->set("filer_long_description", snippets_path . "/filer_long_description.html");
 
+	$f3->set("space_shooter_short_description", snippets_path . "/space_shooter_short_description.html");
+	$f3->set("space_shooter_medium_description", snippets_path . "/space_shooter_medium_description.html");
+	$f3->set("space_shooter_long_description", snippets_path . "/space_shooter_long_description.html");
+
 	$f3->set("social_media_links", snippets_path . "/social_media_links.html");
 	
 
@@ -116,6 +120,13 @@
 	    function() {
 	        global $template;
 	        echo $template->render(template_path ."/filer.html");
+	    }
+	);
+
+	$f3->route('GET /space-shooter',
+	    function() {
+	        global $template;
+	        echo $template->render(template_path ."/space_shooter.html");
 	    }
 	);
 

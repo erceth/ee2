@@ -146,6 +146,10 @@
   transition: visibility 0s 1s, opacity 1s linear;
   -webkit-transition: visibility 0s 1s, opacity 1s linear;
 }
+.projects .all-projects .space-shooter .project-img {
+  position: relative;
+  top: -148px;
+}
 .sms-tracker .item {
   height: 500px;
 }
