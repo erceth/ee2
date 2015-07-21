@@ -303,8 +303,14 @@ header {
 }
 @media (max-width: 992px) {
   .nav-list .nav-item {
-    font-size: 50px;
-    padding: 40px;
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .nav-list .nav-item {
+    font-size: 35px;
+    padding: 25px;
   }
 }
 .navigation {
