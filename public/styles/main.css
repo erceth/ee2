@@ -42,6 +42,13 @@
 .home .splash .item .carousel-caption {
   background: rgba(0, 0, 0, 0.5);
 }
+.home .splash .item a:hover div {
+  text-decoration: underline;
+}
+.home .splash .carousel-indicators {
+  padding-bottom: 20px;
+  bottom: 0;
+}
 .home .blobs {
   padding: 10px 0;
 }

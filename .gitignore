@@ -1,3 +1,5 @@
 .DS_Store
 public/tmp
 public/messages
+node_modules/.bin/
+node_modules/gulp/

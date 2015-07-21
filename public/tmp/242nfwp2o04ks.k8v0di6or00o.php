@@ -13,7 +13,7 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
                         <img src="img/tanks2.png" alt="j.s. flags gameplay" class="img-responsive center-block">
-                        <a ui-sref="jsflags">
+                        <a href="jsflags">
                             <div class="carousel-caption">
                                 JSFlags -- A multiplayer game of capture the flag with tanks. Game engine and artifical intelligence written completely in Javascript.
                             </div>
@@ -21,7 +21,7 @@
                     </div>
                     <div class="item">
                         <img id="jsflags-tournament" src="img/jsflags_tournament.jpg" alt="watching j.s. flags on projector" class="img-responsive center-block">
-                        <a ui-sref="jsflags">
+                        <a href="jsflags">
                             <div class="carousel-caption">
                                 JSFlags tournament at Unicity. Participants created an AI to compete for dominance.
                             </div>
@@ -29,7 +29,7 @@
                     </div>
                     <div class="item">
                         <img src="img/google-sheets.png" alt="shows an attendence role on a google spreadsheet" class="img-responsive center-block">
-                        <a ui-sref="sms-tracker">
+                        <a href="sms-tracker">
                             <div class="carousel-caption">
                                 SMS Tracker -- Tracks attendence of classroom using SMS texts. Attendence is saved to a Mongo Database and shared using Google Sheets.
                             </div>
@@ -37,7 +37,7 @@
                     </div>
                     <div class="item">
                         <img src="img/provo_freedom_festival.png" alt="screenshot of provo freedom festival website" class="img-responsive center-block">
-                        <a ui-sref="sms-tracker">
+                        <a href="freedom-festival">
                             <div class="carousel-caption">
                                 The Provo Freedom Festival website details a series of events spanning serveral months celebrating Independance Day.  I collaborated on this site while working for Rain.
                             </div>
