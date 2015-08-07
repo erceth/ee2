@@ -28,6 +28,14 @@
                         </a>
                     </div>
                     <div class="item">
+                        <img src="img/angular_assignment_slide.png" alt="screenshot of angular assignment website" class="img-responsive center-block">
+                        <a href="angular-assignment">
+                            <div class="carousel-caption">
+                                Site built in AngularJS for a coding assignment.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
                         <img src="img/google-sheets.png" alt="shows an attendence role on a google spreadsheet" class="img-responsive center-block">
                         <a href="sms-tracker">
                             <div class="carousel-caption">
