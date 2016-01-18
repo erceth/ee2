@@ -37,6 +37,10 @@
 	$f3->set("angular_assignment_medium_description", description_path . "/angular_assignment_medium_description.html");
 	$f3->set("angular_assignment_long_description", description_path . "/angular_assignment_long_description.html");
 
+	$f3->set("knockoutchess_short_description", description_path . "/knockoutchess_short_description.html");
+	$f3->set("knockoutchess_medium_description", description_path . "/knockoutchess_medium_description.html");
+	$f3->set("knockoutchess_long_description", description_path . "/knockoutchess_long_description.html");
+
 	//path to social media html for footer
 	$f3->set("social_media_links", snippets_path . "/social_media_links.html");
 
@@ -236,6 +240,21 @@
 		    echo $template->render(template_path . "/header.html");
 
 	        echo $template->render(template_path ."/angular_assignment.html");
+	    }
+	);
+
+	$f3->route('GET /knockoutchess',
+	    function($f3) {
+	        global $template;
+
+	        //meta data
+	        $f3->set("title", meta_data_path . "/knockoutchess_title.html");
+		    $f3->set("description", meta_data_path . "/knockoutchess_description.html");
+
+		    //header
+		    echo $template->render(template_path . "/header.html");
+
+	        echo $template->render(template_path ."/knockoutchess.html");
 	    }
 	);
 
