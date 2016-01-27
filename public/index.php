@@ -41,6 +41,10 @@
 	$f3->set("knockoutchess_medium_description", description_path . "/knockoutchess_medium_description.html");
 	$f3->set("knockoutchess_long_description", description_path . "/knockoutchess_long_description.html");
 
+	$f3->set("angular2_reddit_short_description", description_path . "/angular2_reddit_short_description.html");
+	$f3->set("angular2_reddit_medium_description", description_path . "/angular2_reddit_medium_description.html");
+	$f3->set("angular2_reddit_long_description", description_path . "/angular2_reddit_long_description.html");
+
 	//path to social media html for footer
 	$f3->set("social_media_links", snippets_path . "/social_media_links.html");
 
@@ -257,6 +261,22 @@
 	        echo $template->render(template_path ."/knockoutchess.html");
 	    }
 	);
+
+	$f3->route('GET /angular2-reddit',
+	    function($f3) {
+	        global $template;
+
+	        //meta data
+	        $f3->set("title", meta_data_path . "/angular2_reddit_title.html");
+		    $f3->set("description", meta_data_path . "/angular2_reddit_description.html");
+
+		    //header
+		    echo $template->render(template_path . "/header.html");
+
+	        echo $template->render(template_path ."/angular2_reddit.html");
+	    }
+	);
+
 
 	
 
